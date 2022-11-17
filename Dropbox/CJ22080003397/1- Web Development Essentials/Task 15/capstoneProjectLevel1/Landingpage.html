@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/sytles.css" rel="stylesheet" type="text/css">
+    <!-- bootstrap link for cart icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Luna leather</title>
+</head>
+<body>
+<!-- landing page is catalog page (i am making the site for a friends real business so there are only so many
+    items in her inventory/capabilities to make at the moment as it is a newish business)-->
+    
+    <header>
+        <div class="container">
+            <img src="images/cat-moon.png" alt="lunalogoplaceholder" class="logo" >
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="./Landingpage.html"> Home</a></li>
+                    <li><a href="./About us.html"> About us</a></li>
+                    <li><a href="./Measurements.html"> Measurements</a></li>
+                    <li><a href="./pricing.html"> Pricing</a></li>
+                    <li class="cart">
+                        <a href="cart.html">
+                            <div class="cart">
+                                <i class="bi bi-bag-heart-fill"></i>
+                                <div id="cartAmount" class="cartAmount">0</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <span><br id="spacer"></span>
+
+    <div class="shop" id="shop">
+    
+
+    </div>
+
+    
+</body>
+<script src="src/data.js"></script>
+<script src="src/main.js"></script>
+</html>

@@ -1,0 +1,22 @@
+#This is a online store for a task
+##The idea is not for this to be a live active website and i would definitely write things *alittle differently* if it was, this was created to fullfill specific task requirements and due to the speed with which it was done is more a practical representation than a finalized project. 
+
+The project also acts as an example of a possible website for a friend of mine whose business i based the project on. The files are all connected with code and the whole project file can be uploaded and hoasted as a website. 
+
+####The project needed to meet the following criteria:
+* Create a functional shopping cart for your online store.
+* Allow a “quick add to cart” from the catalogue page.
+* Each product’s page must also have the option to “add to cart”.
+* When an item is added, an alert should tell the user what the current total is.
+* Create a new html page for the cart section which allows the user to see what is in their cart each item’s price, and the total cost (remember to add VAT!)
+* Create a form which allows for “discount coupons”.
+* Create forms to allow a user to select “collection” or “delivery”.
+* Create forms for different delivery options.
+* Your total should change based on what delivery option is chosen and whether a discount coupon is applied.
+* Create a “confirm order” button which alerts the user that their order was successful and generates them a reference number (keyword: generate) ○ Within the entirety of your site, you should have at least the following
+
+jQuery functionality:
+* A function which contains hiding/showing.
+* A drop-down menu.
+* Animation effects.
+* A function with chained effects.

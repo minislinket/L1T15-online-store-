@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link href="src/sytles.css" rel="stylesheet" type="text/css">
+    <!-- bootstrap link for cart icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Jquery google link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/cat-moon.png" alt="lunalogoplaceholder" class="logo" >
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="./Landingpage.html"> Home</a></li>
+                    <li><a href="./About us.html"> About us</a></li>
+                    <li><a href="./Measurements.html"> Measurements</a></li>
+                    <li><a href="./pricing.html"> Pricing</a></li>
+                    <li class="cart">
+                        <a href="cart.html">
+                            <div class="cart">
+                                <i class="bi bi-bag-heart-fill"></i>
+                                <div id="cartAmount" class="cartAmount">0</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    
+    <div class="textCenter" id="subtotal"></div>
+
+    <div id="vat" class="textCenter"></div>
+
+    <div class="textCenter" id="label"></div>
+
+    <div class="shoppingCart" id="shoppingCart"></div>
+
+    <div class="coupon" id="coupon"> 
+        <div id="couponForm">
+            <form>
+                <label for="code">Coupon Code:</label>
+                <br>
+                <input type="text" name="num1" id="couponCode" placeholder="GOLD20">
+                <br>
+                <button onclick="validate(document.getElementsByName('num1')[0].value,event)" id="couponSubmit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+       <!-- drop down menu for collection/delivery -->
+       <div id="collectOrDeliver">
+        <a class="recieveOrder" href="#">Choose how you would like to recieve your order below.</a>
+        <ul class="dropdown">
+          <li id="collect">Collect</li>
+            <div class="collectDetails">
+                <label for="">Collectors details:</label>
+                <Label class="collPerson">Name:</Label>
+                <input type="text" placeholder="John doe">
+                <label>Phone Number:</label>
+                <input type="text">
+                <label for="">Prefered collection time/date</label>
+                <input type="text">
+                <button>Submit</button>
+            </div>
+          <li id="deliver">Delivery in gauteng R150.00:</li>
+            <div class="deliveryDetails">
+                <label for="">Delivery details:</label>
+                <Label class="reciever">Name of Reciever:</Label>
+                <input type="text" placeholder="John doe">
+                <label>Phone Number:</label>
+                <input type="text">
+                <label for="">Prefered delivery time/date</label>
+                <input type="text">
+                <button onclick="addDelivery();" id="deliverySubmit">Submit</button>
+            </div>
+        </ul>
+       
+        </div> 
+        <div id="confirmOrder">
+            <button id="confirm" onclick="confirmOrder()">Confirm Order</button>
+        </div>
+        
+        
+        
+</body>
+<script src="src/data.js"></script>
+<script src="src/cart.js"></script>
+</html>
